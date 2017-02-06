@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='description', content= 'A nice starting configuration')
+    title= "Paper kit starter"
+    script(src="https://use.fontawesome.com/df8ec2625f.js")
+    block stylesheets
+      link(rel="icon" href="img/favicon.ico")
+      // build:css css/app.css
+      link(rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css")
+      link(rel="stylesheet" href="styles/ct-paper.css")
+      link(rel="stylesheet" href="styles/demo.css")
+      link(rel="stylesheet" href="assets/css/main.css")
+      // endbuild
+  body
+    block content
+      
+    block scripts
+      // build:js js/app.js
+      script(src="vendors/jquery/js/jquery.js")
+      script(src="vendors/jquery-ui/js/jquery-ui.js")
+      script(src="vendors/bootstrap/js/bootstrap.js")
+      script(src="scripts/ct-paper-checkbox.js")
+      script(src="scripts/ct-paper-radio.js")
+      script(src="scripts/bootstrap-select.js")
+      script(src="scripts/bootstrap-datepicker.js")
+      script(src="scripts/ct-paper.js")
+      script(src="vendors/holderjs/js/holder.js")
+      script(src="assets/js/main.js")
+      // endbuild
