@@ -112,7 +112,7 @@ gulp.task('serve', ['vendors', 'views', 'styles', 'scripts'], function() {
     browserSync.init({
         server: "./src"
     });
-    gulp.watch("src/views/*.pug", ['views']);
+    gulp.watch("src/views/*.*", ['views']);
     gulp.watch("src/styles/**/*.styl", ['styles']);
     gulp.watch(paths.scripts, ['scripts']);
     gulp.watch(paths.images).on('change', browserSync.reload);
