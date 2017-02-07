@@ -124,7 +124,7 @@ gulp.task('serve', ['vendors', 'views', 'styles', 'scripts'], function() {
 gulp.task('watch', function() {
 
     // Watch .styl files
-    gulp.watch('src/styles/**/*.scss', ['styles']);
+    gulp.watch('src/styles/**/*.styl', ['styles']);
 
     // Watch .js files
     gulp.watch(paths.scripts, ['scripts']);
