@@ -7,13 +7,15 @@ html(lang="en")
     meta(name='description', content= 'A nice starting configuration')
     title= "Paper kit starter"
     script(src="https://use.fontawesome.com/df8ec2625f.js")
+    link(href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css')
     block stylesheets
       link(rel="icon" href="img/favicon.ico")
       // build:css css/app.css
       link(rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css")
       link(rel="stylesheet" href="styles/ct-paper.css")
-      link(rel="stylesheet" href="styles/demo.css")
-      link(rel="stylesheet" href="assets/css/main.css")
+      block styles
+        link(rel="stylesheet" href="assets/css/main.css")
       // endbuild
   body
     block content

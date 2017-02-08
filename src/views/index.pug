@@ -1,3 +1,15 @@
 extends base
+prepend styles
+	link(rel="stylesheet" href="styles/demo.css")
+	link(rel="stylesheet" href="styles/examples.css")
 block content
-	include demo.html
+	include includes/navbar.html
+	.wrapper
+		//include includes/flash.html
+		include includes/header.html
+		.main
+			include includes/col-1-txt-btn.html
+			include includes/col-3-txt.html
+			include includes/team-3.html
+			include includes/contact.html
+		include includes/footer.html
